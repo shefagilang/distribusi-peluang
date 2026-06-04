@@ -1,1 +1,194 @@
-eatgzdg
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribusi Peluang - STMIK Widya Utama</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo-box">
+            <img src="assets/logo1.png" alt="STMIK">
+        </div>
+
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#materi">Materi</a></li>
+            <li><a href="#rumus">Rumus</a></li>
+            <li><a href="#contoh">Contoh</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-left">
+
+            <div class="badge">
+                 Mata Kuliah Statistika
+            </div>
+
+            <h1>
+                Distribusi
+                <br>
+                Peluang
+            </h1>
+
+            <p>
+                Distribusi peluang merupakan metode statistika yang digunakan
+                untuk menggambarkan kemungkinan munculnya suatu nilai
+                dari variabel acak.
+            </p>
+
+            <button class="btn" id="btnMateri">
+                Pelajari Sekarang →
+            </button>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="logo-large">
+
+                <img src="assets/logo2.png" alt="STMIK">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MATERI -->
+
+    <section class="materi" id="materi">
+
+        <h2>Materi Distribusi Peluang</h2>
+
+        <div class="materi-grid">
+
+            <div class="card">
+                <h3>Distribusi Diskrit</h3>
+
+                <p>
+                    Distribusi yang memiliki nilai variabel acak yang dapat
+                    dihitung satu per satu.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Distribusi Binomial</h3>
+
+                <p>
+                    Digunakan untuk menghitung peluang keberhasilan dalam
+                    sejumlah percobaan independen.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Distribusi Poisson</h3>
+
+                <p>
+                    Menggambarkan jumlah kejadian dalam suatu interval waktu
+                    tertentu.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Distribusi Normal</h3>
+
+                <p>
+                    Distribusi berbentuk kurva lonceng yang sering digunakan
+                    dalam statistika.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RUMUS -->
+
+    <section class="rumus" id="rumus">
+
+        <h2>Rumus Distribusi Binomial</h2>
+
+        <div class="rumus-box">
+
+            <p>
+                P(X=x) = nCx × pˣ × (1-p)ⁿ⁻ˣ
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTOH -->
+
+    <section class="contoh" id="contoh">
+
+        <h2>Contoh Soal</h2>
+
+        <div class="contoh-card">
+
+            <p>
+                Sebuah koin dilempar sebanyak 5 kali.
+                Tentukan peluang muncul tepat 3 gambar.
+            </p>
+
+            <button class="btn" id="btnJawab">
+                Tampilkan Jawaban
+            </button>
+
+            <div id="jawaban" class="hidden">
+
+                <h3>Jawaban:</h3>
+
+                <p>
+                    n = 5
+                    <br>
+                    x = 3
+                    <br>
+                    p = 0,5
+                    <br><br>
+
+                    P(X=3)
+                    =
+                    5C3 × (0,5)³ × (0,5)²
+                    <br><br>
+
+                    = 10 × 0,125 × 0,25
+                    <br><br>
+
+                    = 0,3125
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        © 2026 SHEFA - Distribusi Peluang
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
