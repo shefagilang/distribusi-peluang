@@ -343,32 +343,37 @@ footer{
 
 @media(max-width:768px){
 
-    .menu-toggle{
-        display:block;
-    }
-
-    .navbar{
-        position:relative;
-    }
-
-    .navbar ul{
+    #navMenu{
         display:none;
+        position:absolute;
+        top:100%;
+        left:0;
         width:100%;
-        flex-direction:column;
-        text-align:center;
-        gap:15px;
-        margin-top:20px;
-    }
-
-    .navbar ul.active{
-        display:flex;
-    }
-#navMenu{
-        display:none;
-        flex-direction:column;
+        background:white;
+        border:3px solid black;
+        border-radius:20px;
+        padding:15px 0;
+        box-shadow:0 8px 20px rgba(0,0,0,.15);
+        z-index:1000;
     }
 
     #navMenu.active{
         display:flex;
+        flex-direction:column;
+        align-items:center;
     }
+
+    #navMenu li{
+        list-style:none;
+        width:100%;
+        text-align:center;
+    }
+
+    #navMenu a{
+        display:block;
+        padding:12px;
+        width:100%;
+    }
+
+}
 }
