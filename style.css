@@ -363,5 +363,12 @@ footer{
     .navbar ul.active{
         display:flex;
     }
+#navMenu{
+        display:none;
+        flex-direction:column;
+    }
 
+    #navMenu.active{
+        display:flex;
+    }
 }
