@@ -30,3 +30,18 @@ const navMenu = document.getElementById("navMenu");
 menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
+document.querySelectorAll("#navMenu a").forEach(link => {
+    link.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        window.scrollTo({
+            top: target.offsetTop - 120,
+            behavior: "smooth"
+        });
+
+        navMenu.classList.remove("active");
+    });
+});
