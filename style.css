@@ -343,6 +343,9 @@ footer{
 
 @media screen and (max-width:768px){
 
+    .menu-toggle{
+        display:block;
+    }
     .navMenu{
         position:absolute;
         top:100%;
