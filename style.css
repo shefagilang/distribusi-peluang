@@ -385,20 +385,24 @@ footer{
 
         background:#fff;
 
-        border:none;
+        border:5px solid #000;
         border-radius:40px;
 
-        box-shadow:none;
+        box-shadow:0 12px 0 #000;
 
         max-height:0;
         overflow:hidden;
 
-        transition:max-height .4s ease;
-        z-index:999;
+        opacity:0;
+        visibility:hidden;
+
+        transition:max-height .4s ease, opacity .3s ease;
     }
 
     #navMenu.active{
         max-height:400px;
+        opacity:1;
+        visibility:visible;
     }
 
     #navMenu li{
