@@ -30,9 +30,3 @@ const navMenu = document.getElementById("navMenu");
 menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
-// Tutup menu setelah link diklik//
-document.querySelectorAll("#navMenu a").forEach(link => {
-    link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
-    });
-});
