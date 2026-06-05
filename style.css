@@ -5,8 +5,17 @@
     font-family:'Outfit',sans-serif;
 }
 
-body{
-    background:#f8f8f8;
+body {
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#world{
+    display:block;
+    width:100vw;
+    height:100vh;
 }
 
 /* NAVBAR */
