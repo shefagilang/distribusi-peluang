@@ -347,7 +347,7 @@ footer{
         display:block;
     }
 
-    .nav-links{
+    .navMenu{
         position:absolute;
         top:100%;
         left:0;
@@ -361,11 +361,11 @@ footer{
         transition:max-height 0.4s ease;
     }
 
-    .nav-links.active{
+    .navmenu.active{
         max-height:300px;
     }
 
-    .nav-links li{
+    .navMenu li{
         text-align:center;
         padding:15px;
         border-top:1px solid rgba(255,255,255,0.1);
