@@ -343,6 +343,17 @@ footer{
 
 @media(max-width:768px){
 
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:relative;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:35px;
+        cursor:pointer;
     #navMenu{
         display:none;
         position:absolute;
