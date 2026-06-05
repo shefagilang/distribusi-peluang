@@ -341,33 +341,30 @@ footer{
 
 /* MOBILE */
 
-@media (max-width:768px){
-
-    .menu-toggle{
-        display:block;
-    }
+@media screen and (max-width:768px){
 
     .navMenu{
         position:absolute;
         top:100%;
         left:0;
         width:100%;
-        background:#111827;
+        background:white;
+
+        display:flex;
         flex-direction:column;
-        gap:0;
 
         max-height:0;
         overflow:hidden;
-        transition:max-height 0.4s ease;
+        transition:max-height .4s ease;
     }
 
-    .navmenu.active{
+    .navMenu.active{
         max-height:300px;
     }
 
     .navMenu li{
-        text-align:center;
         padding:15px;
-        border-top:1px solid rgba(255,255,255,0.1);
+        text-align:center;
+        list-style:none;
     }
 }
