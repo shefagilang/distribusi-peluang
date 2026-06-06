@@ -25,6 +25,26 @@ body {
     justify-content:space-between;
     align-items:center;
 }
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+
+#navMenu {
+    z-index: 999;
+}
+
+@media (max-width: 768px) {
+    .logo-large {
+        display: none;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
 
 .logo-box{
     width:90px;
