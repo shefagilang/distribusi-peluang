@@ -298,9 +298,11 @@ footer{
         width:95%;
         flex-direction:row;
         justify-content: space-between;
-        display: flex;
+        display: none;
         align-items: center;
         position: relative;
+        z-index: 1000;   
+        overflow: visible;
     }
 
     .logo-box{
@@ -346,7 +348,7 @@ footer{
     .logo-large{
         width:100%;
         margin-left:0;
-        display:flex;
+        display: none;
         justify-content:center;
     }
 
@@ -466,6 +468,10 @@ footer{
 
         max-height:0;
         overflow:hidden;
+        #navMenu {
+        z-index: 999;
+        background: white;
+          }
 
         opacity:0;
         visibility:hidden;
